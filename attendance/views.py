@@ -31,9 +31,6 @@ def show_index(request):
     return render(request, template_name, context)    
 
 
-
-
-    
 def do_face_recognition():    
 
     path = settings.IMAGES_ROOT
@@ -129,6 +126,5 @@ def do_face_recognition():
     cap.release()
     cv2.destroyAllWindows()
 
-    # %%
-
-  
+# def destroy_windows(request):
+#     if request.method == 'POST':
