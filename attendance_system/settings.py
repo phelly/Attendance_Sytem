@@ -124,9 +124,7 @@ STATIC_URL = '/static/'
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 IMAGES_ROOT = os.path.join(PROJECT_ROOT,'images')
 ATTENDANCE_ROOT =os.path.join(PROJECT_ROOT,'attendance.csv')
-STATICFILES_DIRS = (
-    os.path.join(PROJECT_ROOT, 'static'),
-)
+
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
 
 # Default primary key field type
