@@ -123,9 +123,9 @@ USE_TZ = True
 STATIC_URL = '/static/'
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 IMAGES_ROOT = os.path.join(PROJECT_ROOT,'images')
-ATTENDANCE_ROOT =os.path.join(PROJECT_ROOT,'attendance.csv')
 
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
+ATTENDANCE_ROOT =os.path.join(STATIC_ROOT,'attendance.csv')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
