@@ -1,0 +1,136 @@
+<head>
+	<meta charset="utf-8">
+	<meta charset="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Facial Recognition</title>
+	<link href="https://fonts.googleapis.com/css2?
+	family=Poppins:wght@300;400;500;600;700&display=swap"
+	rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="./linkers/face linker.js"></script>
+	
+	<style>
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Poppins',sans-serif;
+}
+.navbar{
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
+nav{
+	flex: 1;
+	text-align:center;
+}
+nav h2{
+	 font-size: 50px;
+}
+a{
+	text-decoration: none;
+	color: #555;
+}
+p{
+	color: #000000;
+	font-size: 30px
+}
+.container{
+	max-width: 1300px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.col-2{
+	flex-basis: 50%;
+	min-width: 300px;
+}
+.col-2 img{
+	max-width: 100%;
+	padding: 50px 0;
+}
+.col-2 h1{
+	font-size: 30px;
+	line-height: 60px;
+	margin: 25px 0;
+}
+.col-2 h3{
+	font-size: 20px;
+	line-height: 20px;
+	margin: 25px 0;
+}
+.btn{
+	display: inline-block;
+	background: #00008B;
+	color: #fff;
+	padding: 8px 30px;
+	margin: 30px 0px;
+	border-radius: 30px;
+	transition: background 0.5s;
+}
+.btn:hover{
+	background: #563434;
+}
+button{
+	display: inline-block;
+	background: #00008B;
+	color: #fff;
+	padding: 8px 30px;
+	margin: 30px 0px;
+	border-radius: 30px;
+	transition: background 0.5s;
+}
+.header{
+	background: radial-gradient(#fff,#E6BF83);
+}
+.header .row{
+	margin-top: 70px;
+}
+	</style>
+</head>
+<body>
+	<div class="header">
+	<div class="container">
+		<div class="navbar">
+			<div class="logo">
+			<img src="./images/Logo.png" width="125px">
+			</div>
+			<nav><h2>FACIAL RECOGNITION</h2></nav>
+	 	</div>	
+		<div class="row">
+			<div class="col-2">
+				<h1>Your face is what identifies you.<br>Finding local solution for local problems.</br></h1>
+				<p>What it offers:</p>
+				<ul>
+				<li>Face detection with or without a mask.</li>
+				<li>Detection when in movement.</li>
+				<li>Automatic door opener.</li>
+				<li>Self enrolment for users</li>
+				<li>High security for the building, since you are verifying the person directly</li>
+				<li>Grant/revoke access instantly</li>
+				</ul>
+				<h3>New face?</h3>
+
+				<form method="post">
+					{% csrf_token%}
+					<input id="login-btn" type="submit" class="btn btn-success form-control" name="" value="Face recognition"><br>
+				</form>
+				
+				<!-- <a href="" id="add" class="btn" onclick="add_face()">Add face</a>
+				<a href="" id="detect" class="btn" onclick="detect_faces()">Face recognition</a> -->
+			</div>
+			<div class="col-2">
+				<img src="./images/photo.jpg">
+			</div>
+		</div>
+	</div>
+	</div>
+</body>
